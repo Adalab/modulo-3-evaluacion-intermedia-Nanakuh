@@ -4,8 +4,8 @@ function QuoteItem( {text, name} ) {
 
   return (
     <div className="card">
-      <p className="phase_quote"> {text}</p>
-      <p className="characert_name">{name}</p>
+      <span className="phrase_quote"> {text} - </span>
+      <span className="characert_name">{name}</span>
     </div>
   );
 }

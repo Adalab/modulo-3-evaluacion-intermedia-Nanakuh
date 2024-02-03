@@ -4,23 +4,36 @@
   text-align: center;
   padding: 50px;
 }
+ul {
+  list-style: none;
+}
 .form{
   margin: 20px;
 }
 .filters {
   text-align: center;
 }
-.quote_card {
+/*.quote_card {
   color:black;
   border:solid 1px black;
   display: flex;
   flex-direction: column;
 
+}*/
+.quote_card{
+  position: relative;
+  width: 30rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
 }
 .container {
- 
-  border:solid 2px black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .characert_name {
   color: green;
+  font-size: 18px;
 }
