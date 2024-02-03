@@ -4,11 +4,11 @@ import QuoteItem from "./QuoteItem";
 
 
 function QuotesList({ quotes }) {
-  const htmlQuotes = quotes.map((quotes, idx) => (
+  const htmlQuotes = quotes.map((quote, idx) => (
     <li key={idx} className="quote_card">
       <QuoteItem
-      text={quotes.quote} 
-      name={quotes.character} 
+      text={quote.quote} 
+      name={quote.character} 
       />
     </li>
   ));
