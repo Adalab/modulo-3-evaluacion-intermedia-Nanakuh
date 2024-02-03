@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 import QuoteItem from "./QuoteItem";
 
 
@@ -12,7 +13,7 @@ function QuotesList({ quotes }) {
     </li>
   ));
   return (
-  <ul className="">
+  <ul className="container">
     {htmlQuotes}
     </ul>
   );  

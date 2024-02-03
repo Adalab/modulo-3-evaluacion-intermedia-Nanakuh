@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import Filters from './Filters'
-import Header from './Header'
-import QuotesList from './QuotesList'
+import Filters from './Filters';
+import Header from './Header';
+import QuotesList from './QuotesList';
 
 import '../scss/App.scss'
 import dataQuotes from '../data/quotes.json';
@@ -14,7 +14,7 @@ function App() {
      <Header />
      <main>
       <Filters />     
-        <QuotesList quotes={quotes} />
+      <QuotesList quotes={quotes} />
      </main>      
     </div>
   )
