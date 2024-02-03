@@ -2,7 +2,8 @@ import '../scss/App.scss'
 
 function App() {
   return (
-    <div>
+    <div className='app'>
+      
       Escribe aquí tu código
     </div>
   )
