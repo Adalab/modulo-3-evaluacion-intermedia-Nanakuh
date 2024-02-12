@@ -1,18 +1,21 @@
-function Filters (handleSelectName) {
-  const handleInput = (event) => {
-    handleSelectName(event.Target.value)
-  }
+import FilterCharacter from "./FilterCharacter";
+import PropTypes from 'prop-types';
+
+function Filters ({handleSelectName}) {
+  
   return (
     <div className="form">
       <form className="filters">
       <label htmlFor="Quote" className="filters_label"> Filtrar por frases</label>
       <input className="filter_input" type="text" placeholder="Buscar frase..."  />
       
-      <label htmlFor="Character"className="filters_label"> Filtar por personje</label>
-      <input className="filter_input" type="text" placeholder="Buscar por personaje..." onInput={handleInput} />
+      <FilterCharacter handleSelectName={handleSelectName}/>
        
       </form>
   </div>
   );
 }
+Filters.propTypes = {
+  handleSelectName: PropTypes.func.isRequired
+};
 export default Filters;

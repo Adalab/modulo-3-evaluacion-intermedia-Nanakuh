@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-function FilterCharacter({ handleFilter }) {
+function FilterCharacter({ handleSelectName }) {
 
   const handleInputCharacter = (event) => {
-    handleFilter('character', event.currentTarget.value);
+    handleSelectName('character', event.currentTarget.value);
   };
 
   return (
@@ -23,7 +23,7 @@ function FilterCharacter({ handleFilter }) {
 }
 
 FilterCharacter.propTypes = {
-  handleFilter: PropTypes.func.isRequired
+  handleSelectName: PropTypes.func.isRequired
 };
 
 export default FilterCharacter;
