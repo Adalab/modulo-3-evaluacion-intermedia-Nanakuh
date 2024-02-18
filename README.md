@@ -16,7 +16,7 @@ Este proyecto es una aplicación web desarrollada utilizando React que permite a
 
 - React
 - JavaScript
-- HTML5
+- HTML
 - CSS
 
 ## Instalación
